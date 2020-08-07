@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#img1
+		{
+    		float: left;
+    		width: 50;
+    		height: 50;
+    		background: #555;
+		}
+		p
+		{
+    		margin:5% 10% 5% 0;
+    		width:30%;
+    		text-align:justify;
+		}
+		.fs1{
+			position:absolute;
+			width:30%;
+			right:50px;
+			top:40px;
+		}
+		.fs2{
+			position:absolute;
+			width:40%;
+			right:50px;
+			top:70%;
+		}
+		.div1{
+			text-align:center;
+		}
+		.div2{
+			border:2px solid black;
+			text-align:center;
+			padding:10%;
+			margin:10%;
+		}
+		.submit{
+			border:2px solid black;
+			margin:0 10% 0 0;
+		}
+		.reset{
+			border:2px solid black;
+		}
+		#lname{
+			margin:10% 0 0 0;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		th,td{
+			border:2px solid black;
+		}
+		th{
+			color:rgb(202, 217, 211);
+		}
+		body{
+			background:steelblue url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTpVspCICah_Erz8Up4C93n4sFgnZ8z_eL4KA&usqp=CAU") no-repeat scroll center; 
+		}
+		.nav{
+			position:absolute;
+			right:16px;
+			top:2px;
+			width:25%;
+		}
+		.nav li{
+			display:inline-block;
+			padding:0 5% 0 0;
+		}
+		.nav li{
+			border-right:1px solid white;
+		}
+		#last{
+			border-right:none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Facebook</h1>
+	<fieldset class="fs1"><legend>Sign in</legend>
+		<form>
+			<div class="div1">
+				<div class="div2">
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="fname" size="20"><br><br>
+					<label for="lname">Last Name:</label>
+					<input type="text" id="lname" name="lname" id=#lname size="20"><br><br> 
+				</div>
+				<input type="submit" value="submit" class="submit">
+				<input type="reset" value="reset" class="reset"><br><br>
+				<a href="#forgot">Forgot Password?</a>
+			</div>
+	 	</form>
+	</fieldset>
+	<fieldset class="fs2"><legend>Sign Up</legend>
+		<form>
+			<label for="name">Name</label>
+			<input type="text" id="name" required placeholder="First Name" size="20">
+			<input type="text" id="name" required placeholder="Last Name" size="20"><br><br>
+			<label for="uname">Choose your Username</label>
+			<input type="email" id="uname" required placeholder="Example@gmail.com" size="20"><br><br>
+			<label for="pass">Create a Password</label>
+			<input type="Password" id="pass" required placeholder="Enter Password" size="20"><br><br>
+			<label for="cpass">Confirm your Password</label>
+			<input type="Password" id="cpass" required placeholder="Confirm Password" size="20"><br><br>
+			<label for="Birthday">Date of Birth</label>
+			<!--<select id="Birthday" name="Birthday">
+				<option value="January">January</option>
+				<option value="February">February</option>
+				<option value="March">March</option>
+				<option value="April">April</option>
+				<option value="May">May</option>
+				<option value="June">June</option>
+				<option value="July">July</option>
+				<option value="August">August</option>
+				<option value="September">September</option>
+				<option value="October">October</option>
+				<option value="November">November</option>
+				<option value="December">December</option>
+			</select>-->
+			<input type="date" id="Birthday" name="Birthday" required placeholder="Date"><br><br>
+			<!--<input type="text" id="Birthday" name="Birthday" required placeholder="Year"><br><br>-->
+			<label for="Gender">Gender</label>
+			<select id="Gender" name="Gender">
+				<option value="Male">Male</option>
+				<option value="Male">Female</option>
+			</select><br><br>
+			<label for="Number">Mobile Number</label>
+			<input type="tel" id="Number" name="Number" required placeholder="Enter Your Number" size="20"><br><br>
+			<label for="cemail">Confirmation Email</label>
+			<input type="email" id="cemail" name="cemail" required placeholder="Example@gmail.com" size="20"><br><br>
+			<label for="Confirmation">Prove you are not a robot</label><br><br>
+			<input type="checkbox" id="Confirmation">
+			<label>Skip this Verification and Verify Via Phone</label><br><br>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7khWOuCfbvjC3MRETa7C8BBx7GYSlvrZFnQ&usqp=CAU">;<br><br><br>
+			<label for="Location">Location</label>
+			<select id="Location" name="Location">
+				<option value="India">India</option>
+				<option value="Russia">Russia</option>
+				<option value="USA">USA</option>
+				<option value="South Africa">South Africa</option>
+				<option value="Brazil">Brazil</option>
+			</select><br><br>
+			<input type="checkbox" name="checkbox">I agree to Google<span style="color:blue;font-weight:bold;">Terms and Services</span> and <span style="color:blue;font-weight:bold">Privacy Policy</span>
+		</form>
+	</fieldset>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTu8tkSroODADM34G7rHpf9AXygu5m97Uf6mg&usqp=CAU" alt="Facebook Logo" id="img1">
+	<br><br><br><br><br><br><br><br><br><br>
+	<div style="float:left">
+		<p>Facebook (stylized as facebook) is an American online social media and social networking service based in Menlo Park, California and a flagship service of the namesake company Facebook, Inc. It was founded by Mark Zuckerberg, along with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.</p>
+	</div>
+	<br><br>
+	<table>
+		<thead>
+			<tr>
+				<th>Name Of the Country</th>
+				<th>Latest Count of Carona Cases</th>
+				<th>No.Of Deaths</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>United States</td>
+				<td>4,80,973</td>
+				<td>159,261</td>
+			</tr>
+			<tr>
+				<td>Brazil</td>
+				<td>2,755,081</td>
+				<td>94,781</td>
+			</tr>
+			<tr>
+				<td>India</td>
+				<td>1,878,382</td>
+				<td>39,188</td>
+			</tr>
+			<tr>
+				<td>Russia</td>
+				<td>861,423</td>
+				<td>14,351</td>
+			</tr>
+			<tr>
+				<td>South Africa</td>
+				<td>561,862</td>
+				<td>8,539</td>
+			</tr>
+		</tbody>
+	</table>
+		<ul class="nav">
+  			<li><a href="#home">Home</a></li>
+  			<li><a href="#about">About Us</a></li>
+  			<li><a href="#clients">Our Clients</a></li>  
+  			<li id="last"><a href="#contact">Contact Us</a></li>
+		</ul>
+</body>
+</html>
